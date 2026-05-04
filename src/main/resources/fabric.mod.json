@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "tunnelex",
+  "version": "1.0.0",
+  "name": "Tunnelex",
+  "description": "FPS booster for PvP, Bedwars, and Skyblock - enhance your gameplay without cheats!",
+  "authors": ["ItsN4x"],
+  "contact": {
+    "homepage": "https://github.com/ItsN4x/Tunnelex",
+    "sources": "https://github.com/ItsN4x/Tunnelex"
+  },
+  "license": "MIT",
+  "icon": "assets/tunnelex/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.tunnelex.Tunnelex"
+    ],
+    "client": [
+      "net.tunnelex.TunneleyClient"
+    ]
+  },
+  "mixins": [
+    "tunnelex.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17"
+  },
+  "suggests": {
+    "modmenu": "*",
+    "cloth-config2": "*"
+  }
+}
